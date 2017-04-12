@@ -5,30 +5,39 @@
     <title>Redux Intro</title>
   </head>
   <body>
+    <h1>Shirts for coders</h1>
     <div>
-        <label for="product">Product: </label>
-        <select class="options" name="type">
-          <option value="1">shirt</option>
-        </select>
-      </div>
-      <div>
-      <label for="color">Color: <label>
-      <select class="options" name"color">
-        <option value="red">red</option>
-        <option value="orange">orange</option>
-        <option value="yellow">yellow</option>
-        <option value="green">green</option>
-        <option value="blue">blue</option>
-        <option value="purple">purple</option>
-        <option value="white">white</option>
-        <option value="black">black</option>
-        <option value="pink">pink</option>
-        <option value="gray">gray</option>
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>Color</th>
+          <th>Size</th>
+          <th>Motto</th>
+        </tr>
+      </table>
+    </div>
+
+    <h2>Make your coder shirt</h2>
+
+    <div>
+      <label for="color">Color: </label>
+        <select class="options" name="color">
+          <option value="red">red</option>
+          <option value="orange">orange</option>
+          <option value="yellow">yellow</option>
+          <option value="green">green</option>
+          <option value="blue">blue</option>
+          <option value="purple">purple</option>
+          <option value="white">white</option>
+          <option value="black">black</option>
+          <option value="pink">pink</option>
+          <option value="gray">gray</option>
       </select>
-      </div>
-      <div>
-      <label for="size">Size: <label>
-        <select class="options" name"size">
+    </div>
+
+    <div>
+      <label for="size">Size: </label>
+        <select class="options" name="size">
           <option value="x-small">x-small</option>
           <option value="small">small</option>
           <option value="large">large</option>
@@ -36,10 +45,20 @@
           <option value="x-large">x-large</option>
         </select>
       </div>
-      <div>
-      <label for="motto">Enter the motto to be displayed on your shirt (limit 50 characters)<label>
-      <input id"motto-input" class="options motto-input" maxlength="50" minlength="1" type="text" name="motto" placeholder=" enter your text here">
+    <div>
+
+      <label for="motto">Motto(limit 50 characters)</label>
+      <input id="motto-input" class="options motto-input" maxlength="50" minlength="1" type="text" name="motto" placeholder=" enter your text here">
       <input id="submit" class="options button" name="submit" type="submit" value="Submit" />
+    </div>
+
+    <h2>Remove a shirt entry</h2>
+
+    <div>
+      <input class="options button" type="text" name="Remove Shirt" placeholder="ID">
+      <input type="submit" name="" value="Remove">
+
+    </div>
 
     <script src="dist/bundle.js">
 
