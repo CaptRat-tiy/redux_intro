@@ -5,6 +5,41 @@
     <title>Redux Intro</title>
   </head>
   <body>
+    <div>
+        <label for="product">Product: </label>
+        <select class="options" name="type">
+          <option value="1">shirt</option>
+        </select>
+      </div>
+      <div>
+      <label for="color">Color: <label>
+      <select class="options" name"color">
+        <option value="red">red</option>
+        <option value="orange">orange</option>
+        <option value="yellow">yellow</option>
+        <option value="green">green</option>
+        <option value="blue">blue</option>
+        <option value="purple">purple</option>
+        <option value="white">white</option>
+        <option value="black">black</option>
+        <option value="pink">pink</option>
+        <option value="gray">gray</option>
+      </select>
+      </div>
+      <div>
+      <label for="size">Size: <label>
+        <select class="options" name"size">
+          <option value="x-small">x-small</option>
+          <option value="small">small</option>
+          <option value="large">large</option>
+          <option value="medium">medium</option>
+          <option value="x-large">x-large</option>
+        </select>
+      </div>
+      <div>
+      <label for="motto">Enter the motto to be displayed on your shirt (limit 50 characters)<label>
+      <input id"motto-input" class="options motto-input" maxlength="50" minlength="1" type="text" name="motto" placeholder=" enter your text here">
+      <input id="submit" class="options button" name="submit" type="submit" value="Submit" />
 
     <script src="dist/bundle.js">
 
