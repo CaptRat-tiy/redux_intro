@@ -3,7 +3,9 @@ import reducer from './reducer'
 
 console.log('hello world');
 
-const store = createStore( reducer )
+const store = createStore( reducer,
+  typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+)
 
 console.log(store);
 
@@ -17,7 +19,10 @@ newShirtDiv.querySelector('#createButton').onclick = () => {
     })
 }
 
-console.log(store.getState());
+document.querySelector('#removeButton').onclick = () => store.dispatch({
+  type: 'SHIRT@REMOVE',
+  id: parseInt(document.querySelector('#id').value)
+})
 
 store.subscribe( () => {
   console.log("store.getState():", store.getState());
