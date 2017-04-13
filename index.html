@@ -19,9 +19,9 @@
 
     <h2>Make your coder shirt</h2>
 
-    <div>
+    <div id="createShirt">
       <label for="color">Color: </label>
-        <select class="options" name="color">
+        <select id="color" class="options" name="color">
           <option value="red">red</option>
           <option value="orange">orange</option>
           <option value="yellow">yellow</option>
@@ -33,30 +33,23 @@
           <option value="pink">pink</option>
           <option value="gray">gray</option>
       </select>
-    </div>
-
-    <div>
       <label for="size">Size: </label>
-        <select class="options" name="size">
+        <select id="size" class="options" name="size">
           <option value="x-small">x-small</option>
           <option value="small">small</option>
           <option value="large">large</option>
           <option value="medium">medium</option>
           <option value="x-large">x-large</option>
         </select>
-      </div>
-    <div>
-
       <label for="motto">Motto(limit 50 characters)</label>
-      <input id="motto-input" class="options motto-input" maxlength="50" minlength="1" type="text" name="motto" placeholder=" enter your text here">
-      <input id="submit" class="options button" name="submit" type="submit" value="Submit" />
-    </div>
+      <input id="motto" class="options motto-input" maxlength="50" minlength="1" type="text" name="motto" placeholder=" enter your text here">
+      <button type="button" id="createButton">Submit</button>
+  </div>
 
     <h2>Remove a shirt entry</h2>
 
     <div>
-      <input class="options button" type="text" name="Remove Shirt" placeholder="ID">
-      <input type="submit" name="" value="Remove">
+      <button type="button" id="removeShirt">Remove</button>
 
     </div>
 
